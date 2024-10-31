@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/kanit/v15/nKKZ-Go6G5tXcoaS-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(s/kanit/v15/nKKU-Go6G5tXcr5KPyWg-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(s/kanit/v15/nKKU-Go6G5tXcr4yPSWg-1.ttf) format('truetype');
+}
