@@ -11,5 +11,10 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
+  setInterval(async () => {
+    const a = await fetch("https://pcake.onrender.com/")
+    await a.json();
+  }, 10000)
+
   console.log(`Сервер запущен на порту ${PORT}`);
 });
