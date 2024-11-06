@@ -10,7 +10,13 @@ class ApprovedModalWindow extends ModalWindow {
     const { exchangeToken, receiptToken } = getCurrentToken();
     const { axsAmount } = convertTokens(amountEx, exchangeToken.symbol, receiptToken.symbol);
     const { feeAmount } = swapAndCalculateFee(amountEx, exchangeToken.symbol, receiptToken.symbol, 10);
-    const result = subtractTokens(axsAmount, receiptToken.symbol, feeAmount, "BNB", receiptToken.symbol);
+    const result = subtractTokens(
+      axsAmount,
+      receiptToken.symbol,
+      feeAmount,
+      exchangeToken.symbol,
+      receiptToken.symbol
+    );
     const resaltVault = convertTokens(
       result,
       receiptToken.symbol,
